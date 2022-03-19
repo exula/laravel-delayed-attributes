@@ -1,6 +1,3 @@
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/support-ukraine.svg?t=1" />](https://supportukrainenow.org)
-
 # Laravel Packages that allows Attribute updates to be delayed
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/exula/laravel-delayed-attributes.svg?style=flat-square)](https://packagist.org/packages/exula/laravel-delayed-attributes)
@@ -8,7 +5,24 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/exula/laravel-delayed-attributes/Check%20&%20fix%20styling?label=code%20style)](https://github.com/exula/laravel-delayed-attributes/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/exula/laravel-delayed-attributes.svg?style=flat-square)](https://packagist.org/packages/exula/laravel-delayed-attributes)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+The goal of this package is to allow attributes on Eloquent Models to have a delayed update to not overload a database.
+Most attributes this makes absolutely NO SENSE, and should be avoided as your database will not be up-to-date with reality. 
+
+A possible use case for this package is for updating view counts, hit counts, or something like 'last accessed'
+
+Imagine you have an application that tracks every time a certain item is accessed by your users, and you want to update
+a field on the model when that item is accessed with a date of the last access.
+
+```php
+
+function updateLastAccessed($model)
+{
+    $model->last_accessed = Carbon::now();
+    $model->save();
+}
+
+```
+
 
 ## Support us
 
