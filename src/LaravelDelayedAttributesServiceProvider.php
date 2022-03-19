@@ -2,9 +2,9 @@
 
 namespace Exula\LaravelDelayedAttributes;
 
+use Exula\LaravelDelayedAttributes\Commands\LaravelDelayedAttributesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Exula\LaravelDelayedAttributes\Commands\LaravelDelayedAttributesCommand;
 
 class LaravelDelayedAttributesServiceProvider extends PackageServiceProvider
 {

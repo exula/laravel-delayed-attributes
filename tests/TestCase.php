@@ -2,9 +2,9 @@
 
 namespace Exula\LaravelDelayedAttributes\Tests;
 
+use Exula\LaravelDelayedAttributes\LaravelDelayedAttributesServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Exula\LaravelDelayedAttributes\LaravelDelayedAttributesServiceProvider;
 
 class TestCase extends Orchestra
 {
