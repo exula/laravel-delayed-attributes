@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "exula/laravel-delayed-attributes",
+    "description": "Laravel Packages that allows Attribute updates to be delayed",
     "keywords": [
-        ":vendor_name",
+        "exula",
         "laravel",
-        ":package_slug"
+        "laravel-delayed-attributes"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/exula/laravel-delayed-attributes",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Brad Coudriet",
+            "email": "brad@exula.net",
             "role": "Developer"
         }
     ],
@@ -24,29 +24,26 @@
         "nunomaduro/collision": "^6.0",
         "nunomaduro/larastan": "^2.0.1",
         "orchestra/testbench": "^7.0",
-        "pestphp/pest": "^1.21",
-        "pestphp/pest-plugin-laravel": "^1.1",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Exula\\LaravelDelayedAttributes\\": "src",
+            "Exula\\LaravelDelayedAttributes\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Exula\\LaravelDelayedAttributes\\Tests\\": "tests"
         }
     },
     "scripts": {
         "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage"
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage"
     },
     "config": {
         "sort-packages": true
@@ -54,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Exula\\LaravelDelayedAttributes\\LaravelDelayedAttributesServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelDelayedAttributes": "Exula\\LaravelDelayedAttributes\\Facades\\LaravelDelayedAttributes"
             }
         }
     },

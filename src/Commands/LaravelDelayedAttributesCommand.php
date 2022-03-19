@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Exula\LaravelDelayedAttributes\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelDelayedAttributesCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-delayed-attributes';
 
     public $description = 'My command';
 
