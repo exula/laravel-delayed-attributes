@@ -2,7 +2,6 @@
 
 namespace Exula\LaravelDelayedAttributes\Observers;
 
-
 class LaravelDelayedAttributesObserver
 {
     /**

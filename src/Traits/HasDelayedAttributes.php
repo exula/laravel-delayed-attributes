@@ -1,5 +1,5 @@
 <?php
 
-trait HasDelayedAttributes {
-
+trait HasDelayedAttributes
+{
 }
