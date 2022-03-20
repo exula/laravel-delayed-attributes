@@ -6,9 +6,9 @@ use Illuminate\Console\Command;
 
 class LaravelDelayedAttributesCommand extends Command
 {
-    public $signature = 'laravel-delayed-attributes';
+    public $signature = '-elayed-attributes:flush';
 
-    public $description = 'My command';
+    public $description = 'Immediately flush all delayed attributes to the database';
 
     public function handle(): int
     {
